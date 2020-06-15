@@ -8,26 +8,45 @@
   </head>
   
   <body>
-    <div id="after_submit"></div>
-    <form id="contact_form" action="mailto:zacharydwilliams07@gmail.com" method="POST" enctype="multipart/form-data">
-      <div class="row">
-        <label class="required" for="name">Your name:</label><br />
-        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-        <span id="name_validation" class="error_message"></span>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="forum.html">Forum</a>
+      <a href="contact.html">Contact Us</a>
+      <div class="search">
+        <form>
+          <input list="courses" placeholder="Search...">
+          <datalist id="courses">
+            <option value="Web Development">
+            <option value="Python Fundamentals">
+          </datalist>
+          <button>Search</button>
+        </form>
       </div>
-      <div class="row">
-        <label class="required" for="email">Your email:</label><br />
-        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-        <span id="email_validation" class="error_message"></span>
-      </div>
-      <div class="row">
-        <label class="required" for="message">Your message:</label><br />
-        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-        <span id="message_validation" class="error_message"></span>
-      </div>
-      
-      <input id="submit_button" type="submit" value="Send email" />
-    </form>
-    <h3 div="dislnk"><a href="https://discord.gg/FSrenzpD"><i class="fab fa-lg fa-discord">or join us on discord</i></a></h1>
+    </div>
+    <center>
+      <h1>Contact Us</h1>
+      <div id="after_submit"></div>
+      <form id="contact_form" action="mailto:zacharydwilliams07@gmail.com" method="POST" enctype="multipart/form-data">
+        <div class="row">
+          <label class="required" for="name">Your name:</label><br />
+          <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+          <span id="name_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="email">Your email:</label><br />
+          <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+          <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="message">Your message:</label><br />
+          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+          <span id="message_validation" class="error_message"></span>
+        </div>
+        
+        <input id="submit_button" type="submit" value="Send email" />
+      </form>
+      <h3 div="dislnk"><a href="https://discord.gg/FSrenzpD"><i class="fab fa-lg fa-discord">Join us on Discord</i></a></h1>
+    </center>
   </body>
 </html>
